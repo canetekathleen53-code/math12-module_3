@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 | Inequality Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">INEQ<span>3</span></div>
+            <a href="#members">Members</a>
+        </nav>
+
+        <div class="hero">
+            <div class="badge">BSCS • MATHEMATICS</div>
+            <h1>Module 3<br><span>Inequality Solver</span></h1>
+            <p>
+                Explore, solve, and visualize inequalities through
+                programming, algorithms, parsing, and mathematical reasoning.
+            </p>
+            <a href="#solver" class="hero-btn">Start Solving ↓</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="topics">
+            <div class="section-title">
+                <span>01</span>
+                <h2>What You'll Explore</h2>
+            </div>
+
+            <div class="topic-grid">
+                <div class="topic-card">
+                    <div class="icon">01</div>
+                    <h3>Linear Inequalities</h3>
+                    <p>Solve inequalities involving a single variable and visualize the solution on a number line.</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="icon">02</div>
+                    <h3>Compound Inequalities</h3>
+                    <p>Work with AND/OR relationships and discover the combined solution sets.</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="icon">03</div>
+                    <h3>Absolute Value</h3>
+                    <p>Understand distance from zero and solve inequalities involving absolute values.</p>
+                </div>
+
+                <div class="topic-card">
+                    <div class="icon">04</div>
+                    <h3>Quadratic Inequalities</h3>
+                    <p>Analyze parabolas, critical points, intervals, and quadratic solution sets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solver" class="solver-section">
+            <div class="section-title">
+                <span>02</span>
+                <h2>Interactive Solver</h2>
+            </div>
+
+            <div class="solver">
+                <aside class="solver-menu">
+                    <button class="type-btn active" data-type="linear">
+                        <span>01</span> Linear
+                    </button>
+
+                    <button class="type-btn" data-type="compound">
+                        <span>02</span> Compound
+                    </button>
+
+                    <button class="type-btn" data-type="absolute">
+                        <span>03</span> Absolute Value
+                    </button>
+
+                    <button class="type-btn" data-type="quadratic">
+                        <span>04</span> Quadratic
+                    </button>
+                </aside>
+
+                <div class="solver-content">
+                    <div class="solver-header">
+                        <div>
+                            <p class="eyebrow">CURRENT MODE</p>
+                            <h2 id="solverTitle">Linear Inequality</h2>
+                        </div>
+                        <div class="mode-number" id="modeNumber">01</div>
+                    </div>
+
+                    <div id="inputArea"></div>
+
+                    <button class="solve-btn" onclick="solve()">
+                        Solve Inequality →
+                    </button>
+
+                    <div class="result" id="result">
+                        <p class="result-label">RESULT</p>
+                        <div id="answer">Enter an inequality to begin.</div>
+                    </div>
+
+                    <div class="number-line-container">
+                        <p class="result-label">VISUALIZATION</p>
+                        <canvas id="numberLine" width="700" height="150"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="goal">
+            <div class="goal-number">03</div>
+            <div>
+                <p class="eyebrow">ACTIVITY GOAL</p>
+                <h2>Mathematics meets<br><span>Computer Science.</span></h2>
+                <p>
+                    This activity gives BSCS students opportunities to demonstrate
+                    programming, algorithm design, parsing, UI design,
+                    visualization, and testing while mathematics remains centered
+                    on the real number system and inequalities.
+                </p>
+            </div>
+        </section>
+
+        <section id="members" class="members">
+            <div class="section-title">
+                <span>04</span>
+                <h2>Our Team</h2>
+            </div>
+
+            <div class="member-grid">
+                <div class="member">Kathleen Cañete <span>01</span></div>
+                <div class="member">Ivan Leo Libero <span>02</span></div>
+                <div class="member">Jashelyn Demos <span>03</span></div>
+                <div class="member">Trisha Nicole Bahandi <span>04</span></div>
+                <div class="member">Nery Joy Argañosa <span>05</span></div>
+                <div class="member">Princes Sahra Santiago <span>06</span></div>
+                <div class="member">Chilzy Mae Divino <span>07</span></div>
+                <div class="member">Lance Cerbas <span>08</span></div>
+                <div class="member">Denver Cabundocan <span>09</span></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo">INEQ<span>3</span></div>
+        <p>Module 3 • Inequality Solver • BSCS</p>
+    </footer>
+
+    <script src="interaction.js"></script>
+</body>
+</html>
